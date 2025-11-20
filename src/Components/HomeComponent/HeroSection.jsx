@@ -33,9 +33,9 @@ export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full h-[80dvh] relative border-b-2 border-rose-700">
+    <section className="w-full h-[30dvh] md:h-[80dvh] relative border-b-2 border-rose-700">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[ Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 2200, disableOnInteraction: false }}

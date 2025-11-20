@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AnimeCard from "./AnimeCard";
-
+import TopRated from '../HomeComponent/TopRated'
 const AnimeList = () => {
   const [animeData, setAnimeData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,10 +38,17 @@ const AnimeList = () => {
   }
 
   return (
+    <div>
+    <div>
+      
+        <TopRated anime={animeData} />
+      
+    </div>
     <div className="px-2 py-5 my-10  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 container mx-auto">
       {animeData.map((anime) => (
         <AnimeCard key={anime.id} anime={anime} />
       ))}
+    </div>
     </div>
   );
 };

@@ -13,13 +13,13 @@ const AnimeCard = ({ anime }) => {
         <p className="text-sm text-gray-600 mb-1">
           <span className="font-semibold">Type:</span> {anime.type || "N/A"}
         </p>
-        <p className="text-sm text-gray-600 mb-1">
+        <p className="text-sm text-gray-600 mb-1 hidden md:block">
           <span className="font-semibold">Episodes:</span> {anime.episodes || "N/A"}
         </p>
-        <p className="text-sm text-gray-600 mb-1">
+        <p className="text-sm text-gray-600 mb-1 hidden md:block">
           <span className="font-semibold">Release Date:</span> {anime.release_date}
         </p>
-        <p className="text-sm text-gray-600 mb-1">
+        <p className="text-sm text-gray-600 mb-1 hidden md:block">
           <span className="font-semibold">Age Rating:</span> {anime.age_rating}
         </p>
         <p className="text-sm text-gray-600 mb-1">
@@ -36,7 +36,6 @@ const AnimeCard = ({ anime }) => {
             {anime.main_characters.join(", ")}
           </p>
         )}
-        <p className="text-sm text-gray-700 mt-2">{anime.synopsis}</p>
       </div>
     </div>
   );
