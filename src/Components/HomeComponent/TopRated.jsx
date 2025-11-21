@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 
 import { CiCircleChevRight, CiCircleChevLeft } from "react-icons/ci";
 import { MdOutlineStarRate } from "react-icons/md";
+import { NavLink } from "react-router";
 
 const TopRated = ({ anime = [] }) => {
   // Filter anime with rating > 9
@@ -63,6 +64,7 @@ const TopRated = ({ anime = [] }) => {
               <div
                 className="hover:scale-95 duration-300 rounded-xl text-center h-full flex flex-col justify-center shadow"
               >
+                <NavLink to='/toprated'>
                 <div className="relative">
                   <div className="absolute top-0 bg-[#efefef] border-b border-r border-gray-300 left-0 items-center justify-center  px-3 text-black rounded-tl-xl rounded-br-xl">
                     <p className="shiny-text font-bold">{item.rating}</p>
@@ -73,6 +75,7 @@ const TopRated = ({ anime = [] }) => {
                     className="w-full md:h-50 h-35 mx-auto rounded-t-xl object-cover"
                   />
                 </div>
+                
                 <div className="border-r border-l border-b border-gray-300 rounded-br-xl rounded-bl-xl">
                 <h4 className="mt-2 text-[16px] px-2 font-semibold truncate">
                   {item.title}
@@ -81,6 +84,7 @@ const TopRated = ({ anime = [] }) => {
                   EP : {item.episodes || 'N/A'}
                 </p>
                 </div>
+                </NavLink>
               </div>
             </SwiperSlide>
           ))}
