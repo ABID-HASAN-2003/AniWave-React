@@ -1,7 +1,43 @@
 @plugin "daisyui";
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Black+Ops+One&family=Griffy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
 body{
     color: black;
     background-color: white;
+    font-family:'Griffy', systems-ui;
+}
+
+@theme{
+    --font-mon: 'Montserrat', sans-serif;
+    --font-gri: 'Griffy', systems-ui;
+    --font-anc: 'Ancizar Serif', serif;
+    --font-pts: 'PT Serif', serif;
+}
+
+.shiny-text {
+ background: linear-gradient(90deg, #4a90e2, #6a5acd, #a29bfe, #89cff0);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.pagination .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 1;
+  border: 2px solid #000000;
+  padding: 4px;
+}
+.pagination .swiper-pagination-bullet-active {
+  background: #2b25a2;
+  border : 2px solid #ffffff;
 }

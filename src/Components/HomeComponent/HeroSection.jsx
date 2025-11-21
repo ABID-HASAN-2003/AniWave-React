@@ -33,11 +33,11 @@ export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full h-[30dvh] md:h-[80dvh] relative border-b-2 border-rose-700">
+    <section className="pagination w-full h-[30dvh] md:h-[80dvh] relative">
       <Swiper
         modules={[ Pagination, Autoplay]}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true,}}
         autoplay={{ delay: 2200, disableOnInteraction: false }}
         loop={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -51,11 +51,11 @@ export default function HeroSection() {
             >
               {/* TEXT OVERLAY WITH ANIMATION */}
               <div
-                className={`absolute bottom-6 left-6 bg-black/50 p-4 rounded-lg text-white max-w-[70%] transition-transform duration-700 ${
+                className={`absolute bottom-6 left-2 bg-black/50 p-2 md:p-4 rounded-lg text-white max-w-[70%] transition-transform duration-700 ${
                   activeIndex === index ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
                 }`}
               >
-                <h2 className="text-xl font-bold">{item.series}</h2>
+                <h2 className="text-xl font-bold hidden md:block">{item.series}</h2>
                 <p className="text-sm mt-1">{item.dialogue}</p>
               </div>
             </div>

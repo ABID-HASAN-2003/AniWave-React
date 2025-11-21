@@ -1,21 +1,19 @@
+// TopAnimeFetcher.jsx
 import React, { useEffect, useState } from "react";
-import AnimeCard from "./AnimeCard";
-import TopRated from '../HomeComponent/TopRated'
-import Loder from "../GlobalComponents/loder";
 
-const AnimeList = () => {
+const TopAnimeFetcher = ({ children }) => {
   const [animeData, setAnimeData] = useState([]);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     // Jikan API: Top Anime
     fetch("https://api.jikan.moe/v4/top/anime")
       .then((res) => res.json())
       .then((data) => {
-        // Map API data to match your AnimeCard props
         const mappedData = data.data.map((anime) => ({
           id: anime.mal_id,
           title: anime.title,
-          image: anime.images.jpg.image_url,
+          image: anime.images?.jpg?.image_url || "https://via.placeholder.com/150", // safe fallback
           type: anime.type,
           episodes: anime.episodes,
           release_date: anime.aired?.from?.split("T")[0] || "N/A",
@@ -23,7 +21,7 @@ const AnimeList = () => {
           rating: anime.score || "N/A",
           tags: anime.genres?.map((g) => g.name) || [],
           main_characters: anime.characters?.slice(0, 3).map((c) => c.name) || [],
-          synopsis: anime.synopsis.slice(0,100) || "No synopsis available",
+          synopsis: anime.synopsis?.slice(0, 100) || "No synopsis available",
         }));
         setAnimeData(mappedData);
         setLoading(false);
@@ -34,24 +32,7 @@ const AnimeList = () => {
       });
   }, []);
 
-  if (loading) {
-    return <Loder />;
-  }
-
-  return (
-    <div>
-    <div>
-      
-        <TopRated anime={animeData} />
-      
-    </div>
-    <div className="px-2 py-5 my-10  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 container mx-auto">
-      {animeData.map((anime) => (
-        <AnimeCard key={anime.id} anime={anime} />
-      ))}
-    </div>
-    </div>
-  );
+  return children({ animeData, loading });
 };
 
-export default AnimeList;
+export default TopAnimeFetcher;

@@ -1,22 +1,41 @@
-import React from 'react'
-import img from '../../assets/logo/AniWave.png'
+import React from 'react';
+import img from '../../assets/logo/AniWave.png';
+import DarkVeil from './DarkVeil'; // DarkVeil holo tumar Aurora effect
+
 const Navber = () => {
   return (
-    <div className='bg-white border-b-2 border-rose-700'>
-        <div className="flex container mx-auto items-center">
-          <div className="flex items-center flex-1 gap-2 md:gap-5 py-2">
-            <img
-                className='h-15 w-15 rounded-full'
-                alt="Tailwind CSS Navbar component"
-                src={img}/>
-            <a className="btn btn-ghost text-xl">AniWave</a>
-          </div>
-          <div>
-            <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-50 lg:w-100 bg-white outline-none border-amber-300" />
-          </div>
+    <div>
+    <div className="relative w-full  h-20 overflow-hidden">
+      
+      {/* Aurora Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <DarkVeil
+          hueShift={0}             // Color hue shift
+          noiseIntensity={0.1}     // Noise effect
+          scanlineIntensity={0.05} // Scanline effect
+          speed={1.5}              // Animation speed
+          scanlineFrequency={50}   // Scanline frequency
+          warpAmount={0.1}        // Warp distortion
+        />
+      </div>
+
+      {/* Navbar Content */}
+      <div className="container mx-auto relative z-10 bg-transparent flex px-4 items-center h-full">
+        <div className="flex items-center flex-1 gap-2 md:gap-5">
+          <img
+            className="h-12 w-12 rounded-full"
+            alt="AniWave Logo"
+            src={img}
+          />
+          <a className="font-bold text-xl md:text-2xl lg:text-4xl text-white font-pts">AniWave</a>
         </div>
+      </div>
     </div>
-  )
+    <div>
+      <hr className="border-t-2 border-gray-300" />
+    </div>
+    </div>
+  );
 }
 
-export default Navber
+export default Navber;

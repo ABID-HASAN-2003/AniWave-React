@@ -1,12 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 import Navber from './Components/GlobalComponents/Navber'
+import Footer from './Components/GlobalComponents/Footer'
 
 const RouteLayout = () => {
   return (
-    <div className='px-5 md:px-0'>
+    <div>
       <Navber/>
       <Outlet/>
+      <Footer/>
     </div>
   )
 }
