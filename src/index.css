@@ -41,3 +41,18 @@ body{
   background: #2b25a2;
   border : 2px solid #ffffff;
 }
+/* SideDrawer icons সব সাদা করবে */
+.MuiListItemIcon-root {
+    color: white !important;
+}
+
+/* Drawer text color সাদা */
+.MuiListItemText-root {
+    color: white !important;
+}
+
+/* Drawer background dark+slightly transparent */
+.MuiDrawer-paper {
+    background: linear-gradient(#000000, #001c55) !important;
+    opacity: 0.9 !important;
+}

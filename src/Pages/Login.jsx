@@ -9,18 +9,18 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-
-
     // Hard-coded user (You can change it)
     const USER = {
       username: "admin",
       password: "12345",
+      id: "USER123", // Example user ID
     };
 
     // Check credentials
     if (form.username === USER.username && form.password === USER.password) {
-      localStorage.setItem("auth", "true");
-      navigate("/"); // redirect to home page
+      localStorage.setItem("auth", "true");      // Login state
+      localStorage.setItem("userId", USER.id);   // Save user ID
+      navigate("/profile");                       // Redirect to profile page
     } else {
       setError("Invalid username or password!");
     }

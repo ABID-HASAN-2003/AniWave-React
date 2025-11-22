@@ -1,0 +1,692 @@
+[
+  {
+    "id": "1",
+    "title": "Attack on Titan",
+    "image": "https://i.ibb.co.com/JFmxmZBC/1.jpg",
+    "type": "TV",
+    "episodes": 94,
+    "release_date": "2013-04-07",
+    "age_rating": "17+",
+    "rating": 9.1,
+    "tags": ["Dark Fantasy", "Action"],
+    "main_characters": ["Eren Yeager", "Mikasa", "Armin"],
+    "synopsis": "Humanity fights for survival against Titans."
+  },
+  {
+    "id": "2",
+    "title": "Death Note",
+    "image": "https://i.ibb.co.com/qM8Qzyp6/2.jpg",
+    "type": "TV",
+    "episodes": 37,
+    "release_date": "2006-10-04",
+    "age_rating": "15+",
+    "rating": 8.9,
+    "tags": ["Psychological", "Thriller"],
+    "main_characters": ["Light Yagami", "L", "Ryuk"],
+    "synopsis": "A student gains a notebook that kills anyone whose name is written in it."
+  },
+  {
+    "id": "3",
+    "title": "Naruto",
+    "image": "https://i.ibb.co.com/SXQvdS7j/3.jpg",
+    "type": "TV",
+    "episodes": 220,
+    "release_date": "2002-10-03",
+    "age_rating": "13+",
+    "rating": 8.3,
+    "tags": ["Action", "Adventure"],
+    "main_characters": ["Naruto Uzumaki", "Sasuke", "Sakura"],
+    "synopsis": "A ninja boy dreams of becoming the Hokage."
+  },
+  {
+    "id": "4",
+    "title": "Naruto: Shippuden",
+    "image": "https://i.ibb.co.com/MjmPKJt/4.jpg",
+    "type": "TV",
+    "episodes": 500,
+    "release_date": "2007-02-15",
+    "age_rating": "14+",
+    "rating": 8.7,
+    "tags": ["Action", "Adventure"],
+    "main_characters": ["Naruto", "Sasuke", "Kakashi"],
+    "synopsis": "Naruto returns stronger and faces greater threats."
+  },
+  {
+    "id": "5",
+    "title": "One Piece",
+    "image": "https://i.ibb.co.com/Zpgcz2G0/5.jpg",
+    "type": "TV",
+    "episodes": 1100,
+    "release_date": "1999-10-20",
+    "age_rating": "13+",
+    "rating": 8.8,
+    "tags": ["Adventure", "Fantasy"],
+    "main_characters": ["Luffy", "Zoro", "Nami"],
+    "synopsis": "Luffy sails to find the legendary treasure One Piece."
+  },
+  {
+    "id": "6",
+    "title": "Bleach",
+    "image": "https://i.ibb.co.com/rGZkqrJ7/6.jpg",
+    "type": "TV",
+    "episodes": 366,
+    "release_date": "2004-10-05",
+    "age_rating": "13+",
+    "rating": 8.2,
+    "tags": ["Action", "Supernatural"],
+    "main_characters": ["Ichigo Kurosaki", "Rukia"],
+    "synopsis": "A teen becomes a Soul Reaper and battles spirits."
+  },
+  {
+    "id": "7",
+    "title": "Demon Slayer",
+    "image": "https://i.ibb.co.com/Gvp40C9J/7.jpg",
+    "type": "TV",
+    "episodes": 55,
+    "release_date": "2019-04-06",
+    "age_rating": "15+",
+    "rating": 8.7,
+    "tags": ["Action", "Fantasy"],
+    "main_characters": ["Tanjiro", "Nezuko"],
+    "synopsis": "A boy fights demons to cure his sister."
+  },
+  {
+    "id": "8",
+    "title": "Jujutsu Kaisen",
+    "image": "https://i.ibb.co.com/f3xzLvw/8.jpg",
+    "type": "TV",
+    "episodes": 47,
+    "release_date": "2020-10-03",
+    "age_rating": "17+",
+    "rating": 8.8,
+    "tags": ["Action", "Supernatural"],
+    "main_characters": ["Yuji Itadori", "Gojo"],
+    "synopsis": "A boy becomes host to a dangerous curse."
+  },
+  {
+    "id": "9",
+    "title": "Tokyo Ghoul",
+    "image": "https://i.ibb.co.com/rKWq4WLf/9.jpg",
+    "type": "TV",
+    "episodes": 12,
+    "release_date": "2014-07-04",
+    "age_rating": "17+",
+    "rating": 7.8,
+    "tags": ["Horror", "Psychological"],
+    "main_characters": ["Kaneki Ken"],
+    "synopsis": "A student becomes half-ghoul and struggles for identity."
+  },
+  {
+    "id": "10",
+    "title": "Hunter x Hunter",
+    "image": "https://i.ibb.co.com/WNRCZvW8/10.jpg",
+    "type": "TV",
+    "episodes": 148,
+    "release_date": "2011-10-02",
+    "age_rating": "14+",
+    "rating": 9.0,
+    "tags": ["Adventure", "Fantasy"],
+    "main_characters": ["Gon", "Killua"],
+    "synopsis": "A boy becomes a Hunter to find his father."
+  },
+
+  {
+    "id": "11",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "image": "https://i.ibb.co.com/G4g2nmSX/11.jpg",
+    "type": "TV",
+    "episodes": 64,
+    "release_date": "2009-04-05",
+    "age_rating": "13+",
+    "rating": 9.1,
+    "tags": ["Adventure", "Dark Fantasy"],
+    "main_characters": ["Edward Elric", "Alphonse"],
+    "synopsis": "Two brothers search for a way to restore their bodies."
+  },
+
+  {
+    "id": "12",
+    "title": "Dragon Ball Z",
+    "image": "https://i.ibb.co.com/bMLyJsDx/12.jpg",
+    "type": "TV",
+    "episodes": 291,
+    "release_date": "1989-04-26",
+    "age_rating": "13+",
+    "rating": 8.3,
+    "tags": ["Action", "Martial Arts"],
+    "main_characters": ["Goku", "Vegeta"],
+    "synopsis": "Goku defends Earth against powerful foes."
+  },
+
+  {
+    "id": "13",
+    "title": "Dragon Ball Super",
+    "image": "https://i.ibb.co.com/KxgQys1k/1.jpg",
+    "type": "TV",
+    "episodes": 131,
+    "release_date": "2015-07-05",
+    "age_rating": "13+",
+    "rating": 8.1,
+    "tags": ["Action", "Martial Arts"],
+    "main_characters": ["Goku", "Beerus"],
+    "synopsis": "Goku achieves new powers against cosmic threats."
+  },
+
+  {
+    "id": "14",
+    "title": "Chainsaw Man",
+    "image": "https://i.ibb.co.com/vCchmdR1/14.png",
+    "type": "TV",
+    "episodes": 12,
+    "release_date": "2022-10-12",
+    "age_rating": "17+",
+    "rating": 8.6,
+    "tags": ["Action", "Horror"],
+    "main_characters": ["Denji", "Makima"],
+    "synopsis": "A boy merges with a chainsaw demon."
+  },
+
+  {
+    "id": "15",
+    "title": "My Hero Academia",
+    "image": "https://i.ibb.co.com/tPTBhnpV/15.jpg",
+    "type": "TV",
+    "episodes": 138,
+    "release_date": "2016-04-03",
+    "age_rating": "14+",
+    "rating": 8.2,
+    "tags": ["Action", "Superhero"],
+    "main_characters": ["Deku", "Bakugo"],
+    "synopsis": "A powerless boy dreams of becoming a hero."
+  },
+
+  {
+    "id": "16",
+    "title": "Black Clover",
+    "image": "https://i.ibb.co.com/mF6N3dwX/16.jpg",
+    "type": "TV",
+    "episodes": 170,
+    "release_date": "2017-10-03",
+    "age_rating": "13+",
+    "rating": 8.0,
+    "tags": ["Fantasy", "Magic"],
+    "main_characters": ["Asta", "Yuno"],
+    "synopsis": "A magicless boy strives to become Wizard King."
+  },
+
+  {
+    "id": "17",
+    "title": "Haikyuu!!",
+    "image": "https://i.ibb.co.com/GLPLtGh/17.jpg",
+    "type": "TV",
+    "episodes": 85,
+    "release_date": "2014-04-06",
+    "age_rating": "10+",
+    "rating": 8.7,
+    "tags": ["Sports"],
+    "main_characters": ["Hinata", "Kageyama"],
+    "synopsis": "A short boy dreams of becoming a great volleyball player."
+  },
+
+  {
+    "id": "18",
+    "title": "Tokyo Revengers",
+    "image": "https://i.ibb.co.com/VpLhvDr9/18.jpg",
+    "type": "TV",
+    "episodes": 37,
+    "release_date": "2021-04-11",
+    "age_rating": "14+",
+    "rating": 7.9,
+    "tags": ["Action", "Time Travel"],
+    "main_characters": ["Takemichi", "Mikey"],
+    "synopsis": "A man travels back to save his girlfriend."
+  },
+
+  {
+    "id": "19",
+    "title": "Blue Lock",
+    "image": "https://i.ibb.co.com/qYhtdJ3c/19.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2022-10-09",
+    "age_rating": "13+",
+    "rating": 8.3,
+    "tags": ["Sports", "Psychological"],
+    "main_characters": ["Isagi Yoichi"],
+    "synopsis": "Japan creates a ruthless program to build the ultimate striker."
+  },
+
+  {
+    "id": "20",
+    "title": "Spy x Family",
+    "image": "https://i.ibb.co.com/3msxPz2j/20.jpg",
+    "type": "TV",
+    "episodes": 37,
+    "release_date": "2022-04-09",
+    "age_rating": "10+",
+    "rating": 8.5,
+    "tags": ["Comedy", "Action"],
+    "main_characters": ["Loid", "Yor", "Anya"],
+    "synopsis": "A spy creates a fake family for a mission."
+  },
+
+  {
+    "id": "21",
+    "title": "Sword Art Online",
+    "image": "https://i.ibb.co.com/v4kCtGsG/21.jpg",
+    "type": "TV",
+    "episodes": 96,
+    "release_date": "2012-07-08",
+    "age_rating": "13+",
+    "rating": 7.7,
+    "tags": ["Sci-Fi", "Adventure"],
+    "main_characters": ["Kirito", "Asuna"],
+    "synopsis": "Players are trapped inside a deadly VRMMO."
+  },
+
+  {
+    "id": "22",
+    "title": "Steins;Gate",
+    "image": "https://i.ibb.co.com/DH28nX5d/22.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2011-04-06",
+    "age_rating": "14+",
+    "rating": 9.1,
+    "tags": ["Sci-Fi", "Time Travel"],
+    "main_characters": ["Okabe Rintarou", "Kurisu"],
+    "synopsis": "A group accidentally discovers time travel."
+  },
+
+  {
+    "id": "23",
+    "title": "Code Geass",
+    "image": "https://i.ibb.co.com/Kp38g2Tn/23.jpg",
+    "type": "TV",
+    "episodes": 50,
+    "release_date": "2006-10-05",
+    "age_rating": "15+",
+    "rating": 8.7,
+    "tags": ["Mecha", "Psychological"],
+    "main_characters": ["Lelouch"],
+    "synopsis": "A prince gains the power to command anyone."
+  },
+
+  {
+    "id": "24",
+    "title": "Neon Genesis Evangelion",
+    "image": "https://i.ibb.co.com/HpNgLgsS/24.jpg",
+    "type": "TV",
+    "episodes": 26,
+    "release_date": "1995-10-04",
+    "age_rating": "17+",
+    "rating": 8.5,
+    "tags": ["Mecha", "Psychological"],
+    "main_characters": ["Shinji", "Asuka"],
+    "synopsis": "Teens pilot bio-mechas against mysterious beings."
+  },
+
+  {
+    "id": "25",
+    "title": "Cowboy Bebop",
+    "image": "https://i.ibb.co.com/WpH4JSgJ/25.jpg",
+    "type": "TV",
+    "episodes": 26,
+    "release_date": "1998-04-03",
+    "age_rating": "14+",
+    "rating": 8.9,
+    "tags": ["Space", "Action"],
+    "main_characters": ["Spike", "Jet"],
+    "synopsis": "Space bounty hunters chase criminals."
+  },
+
+  {
+    "id": "26",
+    "title": "Vinland Saga",
+    "image": "https://i.ibb.co.com/k2pL0Pck/26.jpg",
+    "type": "TV",
+    "episodes": 48,
+    "release_date": "2019-07-08",
+    "age_rating": "17+",
+    "rating": 8.8,
+    "tags": ["Historical", "Action"],
+    "main_characters": ["Thorfinn"],
+    "synopsis": "A young Viking seeks revenge."
+  },
+
+  {
+    "id": "27",
+    "title": "Berserk",
+    "image": "https://i.ibb.co.com/kgq5dSFx/27.jpg",
+    "type": "TV",
+    "episodes": 25,
+    "release_date": "1997-10-08",
+    "age_rating": "18+",
+    "rating": 8.7,
+    "tags": ["Dark Fantasy"],
+    "main_characters": ["Guts", "Griffith"],
+    "synopsis": "A mercenary struggles in a brutal medieval world."
+  },
+
+  {
+    "id": "28",
+    "title": "Your Lie in April",
+    "image": "https://i.ibb.co.com/ycGf9zbr/28.jpg",
+    "type": "TV",
+    "episodes": 22,
+    "release_date": "2014-10-10",
+    "age_rating": "10+",
+    "rating": 8.7,
+    "tags": ["Romance", "Drama"],
+    "main_characters": ["Kousei", "Kaori"],
+    "synopsis": "A pianist finds inspiration from a violinist."
+  },
+
+  {
+    "id": "29",
+    "title": "Toradora!",
+    "image": "https://i.ibb.co.com/4ZFF36jc/29.jpg",
+    "type": "TV",
+    "episodes": 25,
+    "release_date": "2008-10-02",
+    "age_rating": "10+",
+    "rating": 8.2,
+    "tags": ["Romance", "Comedy"],
+    "main_characters": ["Taiga", "Ryuji"],
+    "synopsis": "Two students help each other with their crushes."
+  },
+
+  {
+    "id": "30",
+    "title": "Komi Can't Communicate",
+    "image": "https://i.ibb.co.com/tp02qKJ5/30.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2021-10-07",
+    "age_rating": "10+",
+    "rating": 8.0,
+    "tags": ["Slice of Life", "Comedy"],
+    "main_characters": ["Komi", "Tadano"],
+    "synopsis": "A shy girl wants to make 100 friends."
+  },
+
+  {
+    "id": "31",
+    "title": "Mob Psycho 100",
+    "image": "https://i.ibb.co.com/kgwdxNT2/31.jpg",
+    "type": "TV",
+    "episodes": 37,
+    "release_date": "2016-07-12",
+    "age_rating": "13+",
+    "rating": 8.6,
+    "tags": ["Supernatural", "Comedy"],
+    "main_characters": ["Mob"],
+    "synopsis": "An overpowered psychic wants a normal life."
+  },
+
+  {
+    "id": "32",
+    "title": "One Punch Man",
+    "image": "https://i.ibb.co.com/yFb2qmf9/32.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2015-10-05",
+    "age_rating": "14+",
+    "rating": 8.7,
+    "tags": ["Comedy", "Action"],
+    "main_characters": ["Saitama"],
+    "synopsis": "A hero becomes too strong and is bored."
+  },
+
+  {
+    "id": "33",
+    "title": "Fairy Tail",
+    "image": "",
+    "type": "TV",
+    "episodes": 328,
+    "release_date": "2009-10-12",
+    "age_rating": "13+",
+    "rating": 7.7,
+    "tags": ["Magic", "Adventure"],
+    "main_characters": ["Natsu", "Lucy"],
+    "synopsis": "Wizards embark on magical adventures."
+  },
+
+  {
+    "id": "34",
+    "title": "Re:Zero",
+    "image": "https://i.ibb.co.com/XksJTS3m/34.jpg",
+    "type": "TV",
+    "episodes": 50,
+    "release_date": "2016-04-04",
+    "age_rating": "17+",
+    "rating": 8.4,
+    "tags": ["Fantasy", "Psychological"],
+    "main_characters": ["Subaru", "Emilia"],
+    "synopsis": "A boy is transported to another world with a deadly power."
+  },
+
+  {
+    "id": "35",
+    "title": "Overlord",
+    "image": "https://i.ibb.co.com/j97hvZwq/35.jpg",
+    "type": "TV",
+    "episodes": 52,
+    "release_date": "2015-07-07",
+    "age_rating": "17+",
+    "rating": 8.1,
+    "tags": ["Isekai", "Fantasy"],
+    "main_characters": ["Ainz Ooal Gown"],
+    "synopsis": "A gamer becomes trapped as his in-game character."
+  },
+
+  {
+    "id": "36",
+    "title": "No Game No Life",
+    "image": "https://i.ibb.co.com/JW2cVZdB/36.jpg",
+    "type": "TV",
+    "episodes": 12,
+    "release_date": "2014-04-09",
+    "age_rating": "15+",
+    "rating": 8.2,
+    "tags": ["Isekai", "Fantasy"],
+    "main_characters": ["Sora", "Shiro"],
+    "synopsis": "Siblings are summoned to a world where games rule everything."
+  },
+
+  {
+    "id": "37",
+    "title": "The Rising of the Shield Hero",
+    "image": "https://i.ibb.co.com/8DNv8QNq/37.jpg",
+    "type": "TV",
+    "episodes": 50,
+    "release_date": "2019-01-09",
+    "age_rating": "15+",
+    "rating": 7.9,
+    "tags": ["Isekai", "Fantasy"],
+    "main_characters": ["Naofumi"],
+    "synopsis": "A hero is betrayed after being summoned to another world."
+  },
+
+  {
+    "id": "38",
+    "title": "That Time I Got Reincarnated as a Slime",
+    "image": "https://i.ibb.co.com/W4KgNFgQ/38.jpg",
+    "type": "TV",
+    "episodes": 48,
+    "release_date": "2018-10-02",
+    "age_rating": "13+",
+    "rating": 8.1,
+    "tags": ["Isekai", "Fantasy"],
+    "main_characters": ["Rimuru"],
+    "synopsis": "A man is reincarnated as a slime with powerful abilities."
+  },
+
+  {
+    "id": "39",
+    "title": "Akame ga Kill!",
+    "image": "https://i.ibb.co.com/ZRtZ7St2/39.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2014-07-07",
+    "age_rating": "17+",
+    "rating": 7.7,
+    "tags": ["Action", "Dark Fantasy"],
+    "main_characters": ["Tatsumi", "Akame"],
+    "synopsis": "Assassins battle corruption in an empire."
+  },
+
+  {
+    "id": "40",
+    "title": "The Promised Neverland",
+    "image": "https://i.ibb.co.com/rKsxQB1T/40.jpg",
+    "type": "TV",
+    "episodes": 23,
+    "release_date": "2019-01-11",
+    "age_rating": "15+",
+    "rating": 8.5,
+    "tags": ["Thriller", "Horror"],
+    "main_characters": ["Emma", "Norman", "Ray"],
+    "synopsis": "Children discover the dark truth about their orphanage."
+  },
+
+  {
+    "id": "41",
+    "title": "Dr. Stone",
+    "image": "https://i.ibb.co.com/Y4322jTx/41.jpg",
+    "type": "TV",
+    "episodes": 49,
+    "release_date": "2019-07-05",
+    "age_rating": "10+",
+    "rating": 8.2,
+    "tags": ["Sci-Fi", "Adventure"],
+    "main_characters": ["Senku"],
+    "synopsis": "A genius rebuilds civilization using science."
+  },
+
+  {
+    "id": "42",
+    "title": "Fire Force",
+    "image": "https://i.ibb.co.com/Mk4pQd02/42.jpg",
+    "type": "TV",
+    "episodes": 48,
+    "release_date": "2019-07-06",
+    "age_rating": "15+",
+    "rating": 7.7,
+    "tags": ["Action", "Supernatural"],
+    "main_characters": ["Shinra"],
+    "synopsis": "Firefighters battle people who spontaneously combust."
+  },
+
+  {
+    "id": "43",
+    "title": "Soul Eater",
+    "image": "https://i.ibb.co.com/CsTj7Sfg/43.jpg",
+    "type": "TV",
+    "episodes": 51,
+    "release_date": "2008-04-07",
+    "age_rating": "13+",
+    "rating": 7.8,
+    "tags": ["Action", "Supernatural"],
+    "main_characters": ["Maka", "Soul"],
+    "synopsis": "Students collect souls to empower their weapons."
+  },
+
+  {
+    "id": "44",
+    "title": "Parasyte: The Maxim",
+    "image": "https://i.ibb.co.com/7xywbY5T/44.jpg",
+    "type": "TV",
+    "episodes": 24,
+    "release_date": "2014-10-09",
+    "age_rating": "17+",
+    "rating": 8.4,
+    "tags": ["Horror", "Sci-Fi"],
+    "main_characters": ["Shinichi"],
+    "synopsis": "Parasites take over human bodies, and one bonds with a boy."
+  },
+
+  {
+    "id": "45",
+    "title": "Erased",
+    "image": "https://i.ibb.co.com/N2zz04wR/45.jpg",
+    "type": "TV",
+    "episodes": 12,
+    "release_date": "2016-01-08",
+    "age_rating": "13+",
+    "rating": 8.5,
+    "tags": ["Thriller", "Time Travel"],
+    "main_characters": ["Satoru"],
+    "synopsis": "A man travels back to stop a childhood murder."
+  },
+
+  {
+    "id": "46",
+    "title": "Oregairu",
+    "image": "https://i.ibb.co.com/wFD3xst3/46.jpg",
+    "type": "TV",
+    "episodes": 38,
+    "release_date": "2013-04-05",
+    "age_rating": "13+",
+    "rating": 8.2,
+    "tags": ["Slice of Life", "Romance"],
+    "main_characters": ["Hachiman", "Yukino"],
+    "synopsis": "A loner joins a service club and learns about relationships."
+  },
+
+  {
+    "id": "47",
+    "title": "AoT: Junior High",
+    "image": "https://i.ibb.co.com/rGghy3Tz/47.jpg",
+    "type": "TV",
+    "episodes": 12,
+    "release_date": "2015-10-04",
+    "age_rating": "10+",
+    "rating": 7.1,
+    "tags": ["Comedy", "Parody"],
+    "main_characters": ["Eren", "Mikasa"],
+    "synopsis": "AoT characters in a comedic school setting."
+  },
+
+  {
+    "id": "48",
+    "title": "Assassination Classroom",
+    "image": "https://i.ibb.co.com/8gMfQpks/48.jpg",
+    "type": "TV",
+    "episodes": 47,
+    "release_date": "2015-01-10",
+    "age_rating": "13+",
+    "rating": 8.2,
+    "tags": ["Comedy", "Action"],
+    "main_characters": ["Koro-sensei"],
+    "synopsis": "Students must assassinate their superpowered teacher."
+  },
+
+  {
+    "id": "49",
+    "title": "Classroom of the Elite",
+    "image": "https://i.ibb.co.com/JW15tf3S/49.jpg",
+    "type": "TV",
+    "episodes": 38,
+    "release_date": "2017-07-12",
+    "age_rating": "15+",
+    "rating": 8.1,
+    "tags": ["Psychological", "Drama"],
+    "main_characters": ["Ayanokoji"],
+    "synopsis": "Students compete in a system based on merit and manipulation."
+  },
+
+  {
+    "id": "50",
+    "title": "Blue Exorcist",
+    "image": "https://i.ibb.co.com/nNPy6mMP/50.jpg",
+    "type": "TV",
+    "episodes": 37,
+    "release_date": "2011-04-17",
+    "age_rating": "13+",
+    "rating": 7.7,
+    "tags": ["Supernatural"],
+    "main_characters": ["Rin Okumura"],
+    "synopsis": "A boy discovers he is the son of Satan and trains to defeat demons."
+  }
+]

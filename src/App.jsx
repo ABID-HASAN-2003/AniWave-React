@@ -10,46 +10,36 @@ import RouterLayout from "./RouteLayout";
 import Home from "./Pages/Home";
 import SpinnerColor from "./Components/GlobalComponents/loder";
 import TopRated from "./Pages/TopRated";
+import Profile from "./Pages/Profile";
 import ErrorPage from "./Components/GlobalComponents/ErrorPage";
 import Login from "./Pages/Login";
-import ProtectedRoute from "./Components/GlobalComponents/ProtectedRoute";  // ⬅️ ADD THIS
+import ProtectedRoute from "./Components/GlobalComponents/ProtectedRoute";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate site loading (API load, assets load, etc.)
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RouterLayout />}>
-        {/* PROTECTED ROUTES */}
-        <Route
-          index
-          element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/toprated"
-          element={
-            <ProtectedRoute>
-              <TopRated />
-            </ProtectedRoute>
-          }
-        />
-
-        {/* PUBLIC ROUTE */}
+        {/* PUBLIC PAGES */}
+        <Route index element={<Home />} />
+        <Route path="/toprated" element={<TopRated />} />
         <Route path="/login" element={<Login />} />
+
+        {/* PROFILE REQUIRES LOGIN */}
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
 
         {/* ERROR PAGE */}
         <Route path="*" element={<ErrorPage />} />
