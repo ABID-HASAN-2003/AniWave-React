@@ -5,6 +5,8 @@ import RouterLayout from "./RouteLayout";
 import Home from "./Pages/Home";
 import SpinnerColor from "./Components/GlobalComponents/loder";
 import TopRated from "./Pages/TopRated";
+import ErrorPage from "./Components/GlobalComponents/ErrorPage";
+import SignIn from "./Pages/SignIn";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,6 +25,8 @@ function App() {
       <Route path="/" element={<RouterLayout />}>
         <Route index element={<Home />} />
         <Route path="/toprated" element  ={<TopRated />} />
+        <Route path="/login" element={<SignIn/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Route>
     )
   );

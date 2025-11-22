@@ -17,7 +17,7 @@ const MainSection = () => {
     <div>
       <div>
         <div className="container mx-auto flex flex-col justify-between lg:flex-row gap-5 my-10 items-center">
-          <div className='flex gap-2 items-center  text-xl md:text-2xl lg:text-3xl'>
+          <div className='flex gap-2 font-bold items-center  text-xl md:text-2xl lg:text-3xl'>
           <h1 className=" whitespace-nowrap">TOP RATED ANIME</h1>
           <div className="flex text-yellow-500">
           <MdOutlineStarRate />

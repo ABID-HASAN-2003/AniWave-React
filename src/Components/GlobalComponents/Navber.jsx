@@ -1,41 +1,53 @@
-import React from 'react';
-import img from '../../assets/logo/AniWave.png';
-import DarkVeil from './DarkVeil'; // DarkVeil holo tumar Aurora effect
+import React, { useState } from "react";
+import img from "../../assets/logo/AniWave.png";
+import DarkVeil from "./DarkVeil";
+import { MdMenu } from "react-icons/md";
+import SideDrawer from "./SideDrawer";
 
 const Navber = () => {
-  return (
-    <div>
-    <div className="relative w-full  h-20 overflow-hidden">
-      
-      {/* Aurora Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <DarkVeil
-          hueShift={0}             // Color hue shift
-          noiseIntensity={0.1}     // Noise effect
-          scanlineIntensity={0.05} // Scanline effect
-          speed={1.5}              // Animation speed
-          scanlineFrequency={50}   // Scanline frequency
-          warpAmount={0.1}        // Warp distortion
-        />
-      </div>
+  const [open, setOpen] = useState(false);
 
-      {/* Navbar Content */}
-      <div className="container mx-auto relative z-10 bg-transparent flex px-4 items-center h-full">
-        <div className="flex items-center flex-1 gap-2 md:gap-5">
-          <img
-            className="h-12 w-12 rounded-full"
-            alt="AniWave Logo"
-            src={img}
+  return (
+    <>
+      {/* Sticky Navbar */}
+      <div className="fixed top-0 left-0 w-full h-20 z-50 overflow-hidden backdrop-blur-md bg-black/30 shadow-md">
+
+        {/* Background */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <DarkVeil
+            hueShift={0}
+            noiseIntensity={0.1}
+            scanlineIntensity={0.05}
+            speed={1.5}
+            scanlineFrequency={50}
+            warpAmount={0.1}
           />
-          <a className="font-bold text-xl md:text-2xl lg:text-4xl text-white font-pts">AniWave</a>
+        </div>
+
+        {/* Navbar Content */}
+        <div className="container mx-auto relative z-10 flex justify-between px-4 items-center h-full">
+          
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <img className="h-12 w-12 rounded-full" src={img} alt="AniWave Logo" />
+            <span className="text-white font-bold text-2xl">AniWave</span>
+          </div>
+
+          {/* Menu Button */}
+          <button onClick={() => setOpen(true)}>
+            <MdMenu size={32} className="text-white" />
+          </button>
+
         </div>
       </div>
-    </div>
-    <div>
-      <hr className="border-t-2 border-gray-300" />
-    </div>
-    </div>
+
+      {/* offset so content doesn't hide under navbar */}
+      <div className="h-20"></div>
+
+      {/* Sidebar Component */}
+      <SideDrawer open={open} setOpen={setOpen} />
+    </>
   );
-}
+};
 
 export default Navber;
