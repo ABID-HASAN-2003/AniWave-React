@@ -2,25 +2,20 @@
 import React from "react";
 import img from '../../assets/logo/AniWave.png';
 import DarkVeil from './DarkVeil';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   return (
     <footer className="footer relative footer-horizontal h-fit w-full overflow-hidden footer-center bg-black text-base-content p-10">
-      {/* DarkVeil Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <DarkVeil
-          hueShift={0}             // Color hue shift
-          noiseIntensity={0.1}     // Noise effect
-          scanlineIntensity={0.05} // Scanline effect
-          speed={1.5}              // Animation speed
-          scanlineFrequency={50}   // Scanline frequency
-          warpAmount={0.1}         // Warp distortion
-        />
-      </div>
-
-      {/* Logo */}
+              <DarkVeil
+                hueShift={0}             // Color hue shift
+                noiseIntensity={0.1}     // Noise effect
+                scanlineIntensity={0.05} // Scanline effect
+                speed={1.5}              // Animation speed
+                scanlineFrequency={50}   // Scanline frequency
+                warpAmount={0.1}        // Warp distortion
+              />
+            </div>
       <nav className="relative z-10">
         <img 
           src={img} 
@@ -28,8 +23,6 @@ const Footer = () => {
           className="h-10 w-10 rounded-full"
         />
       </nav>
-
-      {/* Navigation Links */}
       <nav className="grid grid-flow-col gap-4 relative z-10">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
