@@ -1,7 +1,7 @@
 // components/Footer.jsx
 import React from "react";
 import img from '../../assets/logo/AniWave.png';
-
+import { FaYoutube, FaTwitterSquare, FaFacebook } from 'react-icons/fa';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -33,45 +33,10 @@ const Footer = () => {
 
       {/* Social Media Icons */}
       <nav className="relative z-10 text-white">
-        <div className="grid grid-flow-col gap-4">
-          {/* Twitter */}
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609..." />
-            </svg>
-          </a>
-
-          {/* YouTube */}
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M19.615 3.184c-3.604-.246-11.631..." />
-            </svg>
-          </a>
-
-          {/* Facebook */}
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
-            >
-              <path d="M9 8h-3v4h3v12h5..." />
-            </svg>
-          </a>
+        <div className="grid grid-flow-col gap-10 text-3xl">
+         <FaYoutube />
+         <FaFacebook />
+         <FaTwitterSquare />
         </div>
       </nav>
 

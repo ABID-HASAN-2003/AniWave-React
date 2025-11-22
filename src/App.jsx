@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router";
 import "./App.css";
 import RouterLayout from "./RouteLayout";
 import Home from "./Pages/Home";
 import SpinnerColor from "./Components/GlobalComponents/loder";
 import TopRated from "./Pages/TopRated";
 import ErrorPage from "./Components/GlobalComponents/ErrorPage";
-import SignIn from "./Pages/SignIn";
+import Login from "./Pages/Login";
+import ProtectedRoute from "./Components/GlobalComponents/ProtectedRoute";  // ⬅️ ADD THIS
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,10 +29,30 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RouterLayout />}>
-        <Route index element={<Home />} />
-        <Route path="/toprated" element  ={<TopRated />} />
-        <Route path="/login" element={<SignIn/>}/>
-        <Route path="*" element={<ErrorPage/>}/>
+        {/* PROTECTED ROUTES */}
+        <Route
+          index
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/toprated"
+          element={
+            <ProtectedRoute>
+              <TopRated />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* PUBLIC ROUTE */}
+        <Route path="/login" element={<Login />} />
+
+        {/* ERROR PAGE */}
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     )
   );

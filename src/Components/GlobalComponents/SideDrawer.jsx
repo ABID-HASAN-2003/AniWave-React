@@ -15,17 +15,30 @@ import {
   MdStarRate,
   MdFingerprint,
   MdExitToApp,
+  MdLogin,
 } from "react-icons/md";
 
 const drawerWidth = 260;
 
 const SideDrawer = ({ open, setOpen }) => {
-  const menuItems = [
-    { text: "Home", icon: <MdHome size={24} />, path: "/" },
-    { text: "Top Rated", icon: <MdStarRate size={24} />, path: "/toprated" },
-    { text: "ID", icon: <MdFingerprint size={24} />, path: "/demo" },
-    { text: "Exit", icon: <MdExitToApp size={24} />, path: "/demo" },
-  ];
+  const handleLogout = () => {
+    localStorage.removeItem("auth");
+    window.location.href = "/login";
+  };
+
+  const isLoggedIn = !!localStorage.getItem("auth");
+
+  // Conditional menu items
+  const menuItems = isLoggedIn
+    ? [
+        { text: "Home", icon: <MdHome size={24} />, path: "/" },
+        { text: "Top Rated", icon: <MdStarRate size={24} />, path: "/toprated" },
+        { text: "ID", icon: <MdFingerprint size={24} />, path: "/demo" },
+        { text: "LogOut", icon: <MdExitToApp size={24} /> }, // Logout handled separately
+      ]
+    : [
+        { text: "Login", icon: <MdLogin size={24} />, path: "/login" }, // Only login if not logged in
+      ];
 
   return (
     <Drawer
@@ -56,16 +69,28 @@ const SideDrawer = ({ open, setOpen }) => {
       <List>
         {menuItems.map((item) => (
           <ListItem key={item.text} disablePadding>
-            <NavLink
-              to={item.path}
-              className="w-full"
-              onClick={() => setOpen(false)}   // close drawer after click
-            >
-              <ListItemButton>
+            {item.text === "LogOut" ? (
+              <ListItemButton
+                onClick={() => {
+                  handleLogout();
+                  setOpen(false);
+                }}
+              >
                 <ListItemIcon className="text-black">{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItemButton>
-            </NavLink>
+            ) : (
+              <NavLink
+                to={item.path}
+                className="w-full"
+                onClick={() => setOpen(false)}
+              >
+                <ListItemButton>
+                  <ListItemIcon className="text-black">{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </NavLink>
+            )}
           </ListItem>
         ))}
       </List>

@@ -4,6 +4,7 @@ import Navber from './Components/GlobalComponents/Navber'
 import Footer from './Components/GlobalComponents/Footer'
 
 const RouteLayout = () => {
+ 
   return (
     <div>
       <Navber/>
