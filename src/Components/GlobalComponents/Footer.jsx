@@ -5,15 +5,15 @@ import DarkVeil from './DarkVeil';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="footer relative footer-horizontal h-fit w-full overflow-hidden footer-center bg-black text-base-content p-10">
+    <footer className="footer relative overflow-hidden footer-horizontal h-fit w-full  footer-center bg-black text-base-content p-10">
       <div className="absolute inset-0 z-0 pointer-events-none">
               <DarkVeil
                 hueShift={0}             // Color hue shift
-                noiseIntensity={0.1}     // Noise effect
-                scanlineIntensity={0.05} // Scanline effect
-                speed={1.5}              // Animation speed
-                scanlineFrequency={50}   // Scanline frequency
-                warpAmount={0.1}        // Warp distortion
+                noiseIntensity={0}     // Noise effect
+                scanlineIntensity={0} // Scanline effect
+                speed={0}              // Animation speed
+                scanlineFrequency={0}   // Scanline frequency
+                warpAmount={0}        // Warp distortion
               />
             </div>
       <nav className="relative z-10">
