@@ -78,6 +78,7 @@ const AnimeList = () => {
   return (
     <div className="container mx-auto px-4">
       {/* Search and Filter Section */}
+      <TopRated anime={animeData} />
       <div className="my-5 md:my-10">
         <h2 className="text-2xl font-bold mb-3">Filter & Search</h2>
         <div className="flex justify-between flex-col md:flex-row gap-4 ">
@@ -95,7 +96,7 @@ const AnimeList = () => {
       </div>
       
       {/* Top Rated Section (using the original, unfiltered data) */}
-      <TopRated anime={animeData} />
+      
 
       {/* Anime List Section (using the filtered data) */}
       <div className="py-5 my-10">
